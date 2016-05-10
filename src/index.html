@@ -101,8 +101,8 @@
     <script type="text/javascript" src="client/lib/weblibs.js"></script>
 
     <!-- Local styles -->
-    <link rel="stylesheet" type="text/css" href="client/assets/css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="client/assets/css/page_cube_transitions.css"/>
+    <!--link rel="stylesheet" type="text/css" href="client/assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="client/assets/css/page_cube_transitions.css"/-->
 
     <!-- Angular application module -->
     <script type="text/javascript" src="client/app/app.module.js"></script>
@@ -111,7 +111,53 @@
     <script type="text/javascript" src="client/app/app.routes.js"></script>
 </head>
 
-<body>
-
+<body layout="row" flex>
+    <md-sidenav
+            md-component-id="left"
+            md-is-locked-open="$mdMedia('gt-sm')"
+            md-whiteframe="12"
+            layout="column">
+        <header>
+            <a href="">
+                <md-icon style="font-size:100px; color:#2196F3;">directions_boat</md-icon>
+                <h1>SeaSafe</h1>
+            </a>
+        </header>
+        <!--md-toolbar>
+            <h1>Sidenav Right / Toolbar</h1>
+        </md-toolbar-->
+        <md-list>
+            <md-list-item ng-click="navigateTo('data usage', $event)">
+                <md-icon style="color:#FF5722;">warning</md-icon>
+                <p>Alerter</p>
+            </md-list-item>
+        </md-list>
+        <md-list>
+            <md-list-item ng-click="navigateTo('data usage', $event)">
+                <md-icon style="color:#673AB7;">public</md-icon>
+                <p>Géolocalisation</p>
+            </md-list-item>
+        </md-list>
+        <md-list>
+            <md-list-item ng-click="navigateTo('data usage', $event)">
+                <md-icon style="color:#795548;">people</md-icon>
+                <p>Gestion d'equipe</p>
+            </md-list-item>
+        </md-list>
+        <md-list>
+            <md-list-item ng-click="navigateTo('data usage', $event)">
+                <md-icon style="color:#009688;">details</md-icon>
+                <p>En savoire plus</p>
+            </md-list-item>
+        </md-list>
+    </md-sidenav>
+    <div layout="column" flex>
+        <md-toolbar>
+            <h5>SeaSafe App / Bread Crumbs here</h5>
+        </md-toolbar>
+        <md-content>
+            Map Here
+        </md-content>
+    </div>
 </body>
 </html>
