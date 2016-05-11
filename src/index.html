@@ -115,7 +115,7 @@
     <md-sidenav
             md-component-id="left"
             md-is-locked-open="$mdMedia('gt-sm')"
-            md-whiteframe="12"
+            md-whiteframe="8"
             layout="column">
         <header class="nav-header">
             <a href="" class="docs-logo">
@@ -126,7 +126,8 @@
         <!--md-toolbar>
             <h1>Sidenav Right / Toolbar</h1>
         </md-toolbar-->
-        <md-list>
+        <md-list flex
+            style="background: linear-gradient(to bottom, #e5fcc2 55%,#d3f89c 100%);">
             <md-list-item ng-click="navigateTo('data usage', $event)">
                 <md-icon class="md-36" style="color:#FF5722;">warning</md-icon>
                 <p>Alerter</p>

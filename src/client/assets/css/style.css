@@ -96,3 +96,17 @@ a.docs-logo {
 md-icon{
     width:auto !important;
 }
+
+md-sidenav,
+md-sidenav.md-locked-open,
+md-sidenav.md-closed.md-locked-open-add-active {
+    min-width: 0px !important;
+    width: auto !important;
+    max-width: none !important;
+    /*background: #e5fcc2;
+    background: -moz-linear-gradient(top,  #e5fcc2 50%, #acd967 100%);
+    background: -webkit-linear-gradient(top,  #e5fcc2 50%,#acd967 100%);
+    background: linear-gradient(to bottom,  #e5fcc2 50%,#acd967 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5fcc2', endColorstr='#acd967',GradientType=0 ); */
+
+}
