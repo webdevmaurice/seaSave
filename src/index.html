@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="teleportation">
+<html lang="en" ng-app="teleportation" ng-controller="RootController as RC">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
@@ -101,8 +101,8 @@
     <script type="text/javascript" src="client/lib/weblibs.js"></script>
 
     <!-- Local styles -->
-    <!--link rel="stylesheet" type="text/css" href="client/assets/css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="client/assets/css/page_cube_transitions.css"/-->
+    <link rel="stylesheet" type="text/css" href="client/assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="client/assets/css/page_cube_transitions.css">
 
     <!-- Angular application module -->
     <script type="text/javascript" src="client/app/app.module.js"></script>
@@ -117,10 +117,10 @@
             md-is-locked-open="$mdMedia('gt-sm')"
             md-whiteframe="12"
             layout="column">
-        <header>
-            <a href="">
-                <md-icon style="font-size:100px; color:#2196F3;">directions_boat</md-icon>
-                <h1>SeaSafe</h1>
+        <header class="nav-header">
+            <a href="" class="docs-logo">
+                    <md-icon style="font-size:100px; color:#e5fcc2;">directions_boat</md-icon>
+                <h1 class="docs-logotype md-heading">SeaSafe</h1>
             </a>
         </header>
         <!--md-toolbar>
@@ -128,32 +128,29 @@
         </md-toolbar-->
         <md-list>
             <md-list-item ng-click="navigateTo('data usage', $event)">
-                <md-icon style="color:#FF5722;">warning</md-icon>
+                <md-icon class="md-36" style="color:#FF5722;">warning</md-icon>
                 <p>Alerter</p>
             </md-list-item>
-        </md-list>
-        <md-list>
             <md-list-item ng-click="navigateTo('data usage', $event)">
-                <md-icon style="color:#673AB7;">public</md-icon>
+                <md-icon class="md-36" style="color:#673AB7;">public</md-icon>
                 <p>Géolocalisation</p>
             </md-list-item>
-        </md-list>
-        <md-list>
             <md-list-item ng-click="navigateTo('data usage', $event)">
-                <md-icon style="color:#795548;">people</md-icon>
+                <md-icon class="md-36" style="color:#795548;">people</md-icon>
                 <p>Gestion d'equipe</p>
             </md-list-item>
-        </md-list>
-        <md-list>
             <md-list-item ng-click="navigateTo('data usage', $event)">
-                <md-icon style="color:#009688;">details</md-icon>
+                <md-icon class="md-36" style="color:#009688;">details</md-icon>
                 <p>En savoire plus</p>
             </md-list-item>
         </md-list>
     </md-sidenav>
     <div layout="column" flex>
-        <md-toolbar>
-            <h5>SeaSafe App / Bread Crumbs here</h5>
+        <md-toolbar layout="row">
+            <md-button hide-gt-sm ng-click="RC.toggleSidenav()">
+                <md-icon>menu</md-icon>
+            </md-button>
+            <p>SeaSafe App / Bread Crumbs here</p>
         </md-toolbar>
         <md-content>
             Map Here

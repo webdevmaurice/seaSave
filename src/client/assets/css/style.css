@@ -62,3 +62,37 @@ html, body { height: 100%; }
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 }*/
+
+
+.nav-header {
+    background-color: #447d91;
+    background: linear-gradient(#447d91, #63386c);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #447d91), color-stop(1, #63386c));
+    background: -webkit-linear-gradient(top, #447d91 0%, #63386c 100%);
+    background: -moz-linear-gradient(top, #447d91 0%, #63386c 100%);
+    background: linear-gradient(top, #447d91 0%, #63386c 100%);
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+a.docs-logo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 16px;
+    margin: 0 auto;
+    border-bottom: none;
+    text-decoration: none;
+    color: #e5fcc2;
+}
+
+.docs-logotype {
+    text-align: center;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+md-icon{
+    width:auto !important;
+}

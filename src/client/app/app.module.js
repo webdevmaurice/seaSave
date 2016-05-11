@@ -12,4 +12,10 @@ angular.module('teleportation',['weblibs'])
             $rootScope.isRouteLoading = false;
             console.log("end");
         });
+    })
+    .controller('RootController', function($mdSidenav){
+        var RC = this;
+        RC.toggleSidenav = function(){
+            $mdSidenav('left').toggle();
+        }
     });
