@@ -113,6 +113,7 @@
 
 <body layout="row" flex>
     <md-sidenav
+            class="site-sidenav"
             md-component-id="left"
             md-is-locked-open="$mdMedia('gt-sm')"
             md-whiteframe="8"
@@ -128,23 +129,23 @@
         </md-toolbar-->
         <md-list flex
             style="background: linear-gradient(to bottom, #e5fcc2 55%,#d3f89c 100%);">
-            <md-list-item ng-click="navigateTo('data usage', $event)">
-                <md-icon class="md-36" style="color:#FF5722;">warning</md-icon>
+            <md-list-item class="menu-item-alert" ng-click="navigateTo('data usage', $event)">
+                <md-icon class="md-36">warning</md-icon>
                 <p>Alerter</p>
                 <md-divider></md-divider>
             </md-list-item>
-            <md-list-item ng-click="navigateTo('data usage', $event)">
-                <md-icon class="md-36" style="color:#673AB7;">public</md-icon>
+            <md-list-item class="menu-item" ng-click="navigateTo('data usage', $event)">
+                <md-icon class="md-36">public</md-icon>
                 <p>Géolocalisation</p>
                 <md-divider></md-divider>
             </md-list-item>
-            <md-list-item ng-click="navigateTo('data usage', $event)">
-                <md-icon class="md-36" style="color:#795548;">people</md-icon>
+            <md-list-item class="menu-item" ng-click="navigateTo('data usage', $event)">
+                <md-icon class="md-36">people</md-icon>
                 <p>Gestion d'equipe</p>
                 <md-divider></md-divider>
             </md-list-item>
-            <md-list-item ng-click="navigateTo('data usage', $event)">
-                <md-icon class="md-36" style="color:#009688;">details</md-icon>
+            <md-list-item class="menu-item" ng-click="navigateTo('data usage', $event)">
+                <md-icon class="md-36">details</md-icon>
                 <p>En savoire plus</p>
                 <md-divider></md-divider>
             </md-list-item>

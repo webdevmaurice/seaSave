@@ -89,7 +89,7 @@ a.docs-logo {
     margin: 0 auto;
     border-bottom: none;
     text-decoration: none;
-    color: #e5fcc2;
+    color: lightskyblue;
 }
 
 .docs-logotype {
@@ -103,16 +103,22 @@ md-icon{
     width:auto !important;
 }
 
-md-sidenav,
-md-sidenav.md-locked-open,
-md-sidenav.md-closed.md-locked-open-add-active {
-    min-width: 0px !important;
-    width: auto !important;
-    max-width: none !important;
-    /*background: #e5fcc2;
-    background: -moz-linear-gradient(top,  #e5fcc2 50%, #acd967 100%);
-    background: -webkit-linear-gradient(top,  #e5fcc2 50%,#acd967 100%);
-    background: linear-gradient(to bottom,  #e5fcc2 50%,#acd967 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5fcc2', endColorstr='#acd967',GradientType=0 ); */
-
+.site-sidenav,
+.site-sidenav.md-locked-open-add-active,
+.site-sidenav.md-locked-open {
+    width: 272px;
+    min-width: 272px;
+    max-width: 272px;
+}
+.menu-item, .menu-item md-icon{
+    color:#447d91;
+}
+.menu-item:hover,.menu-item:hover md-icon{
+    color:#63386c;
+}
+.menu-item-alert, .menu-item-alert md-icon{
+    color:#D73935;
+}
+.menu-item-alert:hover, .menu-item-alert:hover md-icon{
+    color:#960200;
 }
